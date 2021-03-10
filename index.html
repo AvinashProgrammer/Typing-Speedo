@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Speedo</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="loader">
+        <div id="loader-circle"></div>
+    </div>
+    <nav id="nav">
+        <div id="logo">
+            <img src="img/logo.svg" alt="logo"/>
+            <a href="#">
+                <span>Typing</span>
+                <span>Speedo</span>
+            </a>
+        </div>
+        <div id="hamburger">
+            <div id="menu-line"></div>
+        </div>
+        <ul id="nav-links">
+            <li>
+                <a href="#"><i class="fas fa-home icon"></i>Home</a>
+            </li>
+            <li>
+                <a href="#quickTest"><i class="fas fa-user icon"></i>Quick Test</a>
+            </li>
+            <li>
+                <a href="#game"><i class="fas fa-gamepad icon"></i>Game</a>
+            </li>
+            <li>
+                <a href="#history"><i class="fas fa-file-alt icon"></i>History</a>
+            </li>
+            <li>
+                <a href="#about-us"><i class="fas fa-comment-alt icon"></i>About Us</a>
+            </li>
+            <li>
+                <a href="#contact-us"><i class="fas fa-user-headset icon"></i>Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2 class="text">
+            Typing Speedo helps you <br>
+            to enhance your <br>
+            Typing speed!
+        </h2>
+        <img src="img/illustration.png" alt="illustration" class="illustrationImg">
+        
+        <div class="cards">
+            <div class="card" id="quickTest">
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <img src="img/test.svg" alt="test svg">
+                <div class="title">Quick Test</div>
+                <div class="desc">Check your typing speed with this quick typing test</div>
+                <button id="testBtn">Start</button>
+            </div>
+            <div class="card" id="game">
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <img src="img/game.svg" alt="game svg">
+                <div class="title">Word Tris</div>
+                <div class="desc">Play word tris game and increase your typing speed!</div>
+                <button id="startGameBtn">Play</button>
+            </div>
+            <div class="card" id="history">
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <img src="img/history.svg" alt="history svg">
+                <div class="title">History</div>
+                <div class="desc">Check your previous quick typing test results</div>
+                <button id="openHistory">View</button>
+            </div>
+        </div>
+        
+      
+        <form id="contact-us">
+            <h3 id="contact-us-heading">Send a message</h3>
+            <div class="contact-us-input-box">
+                <input type="text" id="contact-us-name" required=""/>
+                <label for="contact-us-name">Name</label>
+            </div>
+            <div class="contact-us-input-box">
+                <input type="text" id="contact-us-subject" required=""/>
+                <label for="contact-us-subject">Subject</label>
+            </div>
+            <div class="contact-us-input-box">
+                <textarea id="contact-us-message" required=""></textarea>
+                <label for="contact-us-message">Message</label>
+            </div>
+            <button id="contact-us-submit-btn">Send</button>
+        </form>
+        
+    </div>
+    
+    <div class="test-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div id="test-nav">
+            <div class="row">
+                <img src="img/timer.svg" alt="timer">
+                <div id="time"></div>
+            </div>
+            <div id="test-btn">
+                <i class="fad fa-angle-right icon" id="backBtn"></i>
+            </div>
+        </div>
+        
+        <div id="text"></div>
+        
+        <div class="typing-row">
+            <input type="text" id="input" placeholder="Type here..."/>
+            <div id="continueBtn">
+                <i class="fad fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="result-container">
+        <div id="result-nav">
+            <div>Result</div>
+            <div id="result-back-btn">
+                <i class="fad fa-angle-right icon"></i>
+            </div>
+        </div>
+        
+        <section>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
+        
+        <div id="result-box">
+            
+            <div class="box">
+                <div class="progress">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="progress-circle"></circle>
+                    </svg>
+                    <div class="progress-percent"><span></span></div>
+                </div>
+                <h2 class="progress-text">Accuracy</h2>
+            </div>
+            
+            <div class="result-card card-1">
+                <p id="grossSpeed"></p>
+                <p>Gross Speed</p>
+            </div>
+            <div class="result-card">
+                <p id="netSpeed"></p>
+                <p>Net Speed</p>
+            </div>
+            <div class="result-card">
+                <p id="resultTime"></p>
+                <p>Time</p>
+            </div>
+            <div class="result-card">
+                <p id="result-characters"></p>
+                <p>Characters</p>
+            </div>
+            <div class="result-card">
+                <p id="result-words"></p>
+                <p>Words</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="game-container">
+        <div id="game-nav">
+            <div id="game-heading">Word Tris Game</div>
+            <div id="game-back-btn">
+                <i class="fad fa-angle-right icon"></i>
+            </div>
+        </div>
+        
+        <canvas></canvas>
+        <input type="text" id="game-input"/>
+        <button id="openKeyboard">Keyboard</button>
+        <div id="score">0</div>
+        <button id="restart">Play Again!</button>
+    </div>
+    
+    <div id="history-container">
+        <div id="history-nav">
+            <div>Previous results</div>
+            <div id="history-back-btn">
+                <i class="fad fa-angle-right icon"></i>
+            </div>
+        </div>
+        
+        <div class="previous-result-cards"></div>
+    </div>
+    
+<script src="js/app.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
