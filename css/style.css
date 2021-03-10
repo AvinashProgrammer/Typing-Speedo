@@ -346,7 +346,7 @@ body {
     height: 30px;
 }
 #test-nav .icon {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,1);
     font-size: 24px;
 }
 #test-nav #time {
@@ -461,7 +461,7 @@ body {
     width: 20px;
     height: 20px;
     font-size: 20px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,1);
 }
 
 section {
@@ -657,7 +657,7 @@ section .wave {
     width: 20px;
     height: 20px;
     font-size: 20px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,1);
 }
 
 canvas {
@@ -864,7 +864,7 @@ canvas {
     width: 20px;
     height: 20px;
     font-size: 20px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,1);
 }
 
 
